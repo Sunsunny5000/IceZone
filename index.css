@@ -1,0 +1,143 @@
+@keyframes scale_bigger {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes sidebar_left_display {
+  0% {
+    transform: translateX(-100%);
+    display: none;
+  }
+  100% {
+    transform: translateX(0%);
+    display: flex;
+  }
+}
+@keyframes sidebar_left_hidden {
+  0% {
+    transform: translateX(0%);
+    display: flex;
+  }
+  100% {
+    transform: translateX(-100%);
+    display: none;
+  }
+}
+#header {
+  width: 100%;
+  height: 5%;
+  background-color: lightblue;
+  display: flex;
+  box-shadow: 5px 5px 5px rgb(180, 214, 225);
+  border-radius: 0 0 10px 10px;
+}
+
+#logo {
+  margin: auto;
+  width: 8%;
+  height: 90%;
+  display: flex;
+}
+
+#logo_pic {
+  margin: auto;
+  width: 90%;
+  height: 90%;
+}
+#logo_pic:hover {
+  animation: scale_bigger 0.3s;
+  transform: scale(1.1);
+}
+
+#nav {
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  margin-left: auto;
+}
+
+#sidebar_left {
+  margin-left: 0;
+  width: 9%;
+  height: 100%;
+  background-color: lightblue;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  display: none;
+  box-shadow: 5px 5px 5px rgb(180, 214, 225);
+  border-radius: 0 10px 10px 0;
+  z-index: 1;
+  flex-direction: column;
+  transform: translateX(-100%);
+}
+
+#sidebar_logo {
+  margin: auto;
+  width: 90%;
+  height: 4.5%;
+  display: flex;
+}
+
+#sidebar_logo_pic {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+}
+#sidebar_logo_pic:hover {
+  animation: scale_bigger 0.3s;
+  transform: scale(1.1);
+}
+
+#sidebar_option {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  margin: auto;
+  background-color: red;
+}
+
+#sidebar_right {
+  margin-right: 0;
+  width: 9%;
+  height: 95%;
+  background-color: lightblue;
+  position: absolute;
+  display: flex;
+  top: 5%;
+  right: 0;
+  display: none;
+  box-shadow: -5px 5px 5px rgb(180, 214, 225);
+  border-radius: 10px 0 0 10px;
+}
+
+#main_page {
+  width: 82%;
+  height: 93%;
+  position: absolute;
+  display: flex;
+  top: 7%;
+  left: 9%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --screen-width: 0;
+  --screen-height: 0;
+}
+
+html, body {
+  width: var(--screen-width);
+  height: var(--screen-height);
+  display: flex;
+}
+
+/*# sourceMappingURL=index.css.map */

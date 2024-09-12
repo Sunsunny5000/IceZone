@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import "var";
+
+#header{
+	width: 100%;
+	height: 5%;
+	background-color: $lblue;
+	display: flex;
+	box-shadow: 5px 5px 5px $bgblue;
+	border-radius:0 0 10px 10px;
+}
+
+#logo{
+	margin: auto;
+	width: 8%;
+	height: 90%;
+	display: flex;
+}
+
+#logo_pic{
+	margin: auto;
+	width: 90%;
+	height: 90%;
+    &:hover{
+        animation: scale_bigger 0.3s;
+        transform: scale(1.1);
+    }
+}
+
+#nav{
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	margin-left: auto;
+}
+
+.nav_btn{
+	
+}
