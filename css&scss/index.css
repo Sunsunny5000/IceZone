@@ -1,0 +1,135 @@
+@keyframes scale_bigger {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.1); } }
+@keyframes sidebar_left_display {
+  0% {
+    transform: translateX(-100%);
+    display: none; }
+  100% {
+    transform: translateX(0%);
+    display: flex; } }
+@keyframes sidebar_left_hidden {
+  0% {
+    transform: translateX(0%);
+    display: flex; }
+  100% {
+    transform: translateX(-100%);
+    display: none; } }
+#header {
+  width: 100%;
+  height: 57px;
+  background-color: lightblue;
+  display: flex;
+  box-shadow: 5px 5px 5px #b4d6e1;
+  border-radius: 0 0 10px 10px; }
+
+#logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5px;
+  width: 104px;
+  height: 57px;
+  display: flex; }
+
+#logo_pic {
+  margin: auto;
+  width: 94px;
+  height: 47px; }
+  #logo_pic:hover {
+    animation: scale_bigger 0.3s;
+    animation-iteration-count: 1;
+    transform: scale(1.1); }
+
+#nav {
+  margin: auto;
+  width: calc(100% - 94px - 40px);
+  height: 51px;
+  margin-left: auto;
+  display: flex; }
+
+.nav_btn {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20px;
+  width: 94px;
+  height: 47px;
+  background-color: #bfdce5;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center; }
+  .nav_btn:hover {
+    background-color: #d1e6ed; }
+  .nav_btn:active {
+    background-color: #a2ccda; }
+
+#sidebar_left {
+  margin-left: 0;
+  width: 114px;
+  height: 100%;
+  background-color: lightblue;
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  display: none;
+  box-shadow: 5px 5px 5px #b4d6e1;
+  border-radius: 0 10px 10px 0;
+  z-index: 1;
+  flex-direction: column;
+  transform: translateX(-100%); }
+
+#sidebar_logo {
+  margin: auto;
+  width: 98px;
+  height: 51px;
+  display: flex; }
+
+#sidebar_logo_pic {
+  width: 94px;
+  height: 47px;
+  margin: auto; }
+  #sidebar_logo_pic:hover {
+    animation: scale_bigger 0.3s;
+    animation-iteration-count: 1;
+    transform: scale(1.1); }
+
+#sidebar_option {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  margin: auto;
+  background-color: red; }
+
+#sidebar_right {
+  margin-right: 0;
+  width: 104px;
+  height: 95%;
+  background-color: lightblue;
+  position: relative;
+  display: flex;
+  top: 0;
+  right: 0;
+  display: none;
+  box-shadow: -5px 5px 5px #b4d6e1;
+  border-radius: 10px 0 0 10px; }
+
+#main_page {
+  width: 82%;
+  height: 93%;
+  position: absolute;
+  display: flex;
+  top: 57px;
+  left: 104px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex; }
+
+/*# sourceMappingURL=index.css.map */

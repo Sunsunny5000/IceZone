@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@keyframes scale_bigger{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.1);
+	}
+}
+
+@keyframes sidebar_left_display{
+	0%{
+		transform: translateX(-100%);
+		display: none;
+	}
+	100%{
+		transform: translateX(0%);
+		display: flex;
+	}
+}
+
+@keyframes sidebar_left_hidden{
+	0%{
+		transform: translateX(0%);
+		display: flex;
+	}
+	100%{
+		transform: translateX(-100%);
+		display: none;
+	}
+}

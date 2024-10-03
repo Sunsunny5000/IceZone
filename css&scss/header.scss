@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import "var";
+
+#header{
+	width: 100%;
+	height: $logo_height + 10px;
+	background-color: $lblue;
+	display: flex;
+	box-shadow: 5px 5px 5px $bgblue;
+	border-radius:0 0 10px 10px;
+}
+
+#logo{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 5px;
+	width: $logo_width + 10px;
+	height: $logo_height + 10px;
+	display: flex;
+}
+
+#logo_pic{
+	margin: auto;
+	width: $logo_width;
+	height: $logo_height;
+    &:hover{
+        animation: scale_bigger 0.3s;
+		animation-iteration-count: 1;
+        transform: scale(1.1);
+    }
+}
+
+#nav{
+	margin: auto;
+	width: calc(100% - 94px - 40px);
+	height: $logo_height + 4px;
+	margin-left: auto;
+	display: flex;
+	// background-color: yellow;
+}
+
+.nav_btn{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 20px;
+	width: $nav_btn_width;
+	height: $nav_btn_height;
+	background-color: lighten($bgblue, 3%);
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	&:hover{
+		background-color: lighten($bgblue, 8%);
+	}
+	&:active{
+		background-color: darken($bgblue, 5%);
+	}
+}

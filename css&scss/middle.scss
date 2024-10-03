@@ -1,0 +1,11 @@
+@charset "UTF-8";
+@import "var";
+
+#main_page{
+	width: 82%;
+	height: 93%;
+	position: absolute;
+	display: flex;
+	top: $logo_height + 10px;
+	left: $logo_width + 10px;
+}
